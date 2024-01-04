@@ -10,6 +10,23 @@
   margin-bottom: 50px;
 }
 
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contacts__photo {
+  width: 500px;
+  height: 600px;
+
+  img {
+    object-fit: cover;
+    width: 500px;
+    height: 600px;
+  }
+}
 .contacts__list {
   margin: 0;
   padding: 0;
@@ -21,8 +38,6 @@
 
 .contacts__link {
   line-height: 23px;
-  text-decoration: underline;
-  text-transform: uppercase;
 }
 
 
