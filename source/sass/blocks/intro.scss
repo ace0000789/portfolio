@@ -8,12 +8,23 @@
   user-select: none;
 }
 
+.intro__link {
+  color: $color-default-white;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+}
+
 .intro__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 920px;
   margin-left: auto;
+  margin-top: auto;
+  align-self: flex-end;
 }
 
 .intro__text {
@@ -27,6 +38,7 @@
   &--first {
     height: 120px;
     text-align: center;
+    margin-left: 93px;
   }
 }
 
