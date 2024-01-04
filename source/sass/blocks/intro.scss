@@ -70,11 +70,13 @@
 
   @include hover {
     color: $color-yellow-orange;
+    transition: $trans-default;
   }
 
   &:focus {
     color: $color-yellow-orange;
     outline: none;
+    transition: $trans-default;
   }
 }
 
