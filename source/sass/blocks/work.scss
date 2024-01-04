@@ -1,8 +1,32 @@
-.swiper-slide {
-  width: 150px;
-  height: 300px;
-  background-color: $color-default-black;
+.work {
+  width: calc(100vw - 85px);
+  overflow: hidden;
 }
 
+.swiper-container {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 340px;
+  height: 425px;
+  background-color: $color-default-black;
+  outline: none;
+}
+
+.swiper-slide:nth-child(2n) {
+  height: 337px;
+  background-color: red;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: greenyellow;
+}
 
 /**/
