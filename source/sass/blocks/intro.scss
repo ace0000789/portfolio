@@ -59,29 +59,3 @@
   font-size: 20px;
   line-height: normal;
 }
-
-.intro__link {
-  color: $color-default-white;
-  font-size: 20px;
-  line-height: normal;
-  display: block;
-  width: 100%;
-  text-align: right;
-
-  @include hover {
-    color: $color-yellow-orange;
-    transition: $trans-default;
-  }
-
-  &:focus {
-    color: $color-yellow-orange;
-    outline: none;
-    transition: $trans-default;
-  }
-}
-
-.intro__link:active {
-  opacity: 0.5;
-  transition: $trans-default;
-}
-/**/
