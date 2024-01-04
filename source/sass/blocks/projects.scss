@@ -1,3 +1,11 @@
+.project__div {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 53px;
+}
+
 .projects__text {
   display: flex;
   flex-direction: row;
