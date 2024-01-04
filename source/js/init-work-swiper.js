@@ -23,7 +23,7 @@ function initWorkSwiper() {
     // Автовысота картинки
     autoHeight: false,
     // Бесконечный слайдер
-    loop: false,
+    loop: true,
     // Количнство дублирущих слайдов
     loopedSlides: 0,
     // Свободный режим (перетаскивание по 1 фрагменту)
@@ -35,16 +35,15 @@ function initWorkSwiper() {
     breakpoints: {
       1440: {
         slidesPerView: 'auto',
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
         centeredSlides: false,
         allowTouchMove: true,
         spaceBetween: 14,
       },
       768: {
         slidesPerView: 'auto',
-        spaceBetween: 35,
+        spaceBetween: 14,
       },
-
       0: {
         slidesPerView: 1,
         initialSlide: 0,

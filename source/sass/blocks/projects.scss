@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.profect__wrapper {
+.projects__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -13,7 +13,7 @@
   margin-left: auto;
 }
 
-.profect__text {
+.projects__text {
   text-align: right;
   font-size: 128px;
   line-height: 100px;
@@ -27,7 +27,7 @@
   }
 }
 
-.profect__element-second {
+.projects__element-second {
   display: flex;
   flex-direction: row;
   gap: 11px;
@@ -35,7 +35,7 @@
   justify-content: space-between;
 }
 
-.profect__subwrapper {
+.projects__subwrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -44,24 +44,27 @@
   width: 181px;
 }
 
-.profect__text-wrap {
+.projects__text-wrap {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  text-align: left;
 }
 
-.profect__profession {
+.projects__profession {
   margin: 0;
   padding: 0;
   font-size: 20px;
   line-height: normal;
+  text-transform: none;
 }
 
-.profect__span {
+.projects__span {
   font-size: 20px;
   line-height: normal;
   display: block;
   width: 100%;
   text-align: right;
+  text-transform: none;
 }
 /**/
