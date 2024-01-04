@@ -1,0 +1,25 @@
+.intro {
+  background-color: $color-default-black;
+  color: $color-default-white;
+  height: 100vh;
+  padding: 44px 0;
+}
+
+.intro-wrappper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.intro__text {
+  
+}
+
+
+
+
+.intro__link {
+  color: $color-default-white;
+}
+/**/
