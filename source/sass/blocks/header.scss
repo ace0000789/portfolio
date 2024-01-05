@@ -55,7 +55,10 @@
 
   @include hover {
     opacity: 0.8;
-    transition: $trans-default;
+
+    @include vp-1229 {
+      transition: $trans-default;
+    }
   }
 
   &:focus {
@@ -67,5 +70,8 @@
 
 .header__item .header__link:active {
   opacity: 0.5;
-  transition: $trans-default;
+
+  @include vp-1229 {
+    transition: $trans-default;
+  }
 }
