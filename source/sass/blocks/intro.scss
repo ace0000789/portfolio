@@ -42,7 +42,7 @@
   &--first {
     height: 120px;
     text-align: center;
-    margin-left: 93px;
+    margin-left: 105px;
 
     @include vp-1229 {
       margin-left: 0;
@@ -70,9 +70,9 @@
 .intro__element-second {
   display: flex;
   flex-direction: row;
-  gap: 11px;
+  gap: 22px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   @include vp-1229 {
     justify-content: flex-end;
