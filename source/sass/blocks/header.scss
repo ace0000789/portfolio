@@ -11,6 +11,7 @@
   border-left: 1px solid $color-dark-gray;
 
   @include vp-1229 {
+    flex-direction: row-reverse;
     writing-mode: horizontal-tb;
     transform: none;
     border-left: none;
