@@ -86,4 +86,8 @@
   font-size: 20px;
   line-height: normal;
   text-transform: none;
+
+  @include vp-1229 {
+    font-size: 20px;
+  }
 }

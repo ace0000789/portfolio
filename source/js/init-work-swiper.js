@@ -6,7 +6,7 @@ function initWorkSwiper() {
     // перетаскивание на ПК
     simulateTouch: true,
     // чувствительность свайпа
-    touchRatio: 1,
+    touchRatio: 1.2,
     // угол срабатывания свайпа
     touchAngle: 45,
     // курсор перетаскивания
@@ -29,11 +29,11 @@ function initWorkSwiper() {
     // Свободный режим (перетаскивание по 1 фрагменту)
     freeMod: true,
     // Скорость переклдючения слайда
-    speed: 500,
+    speed: 600,
     // Листание
     effect: 'slide',
     breakpoints: {
-      1440: {
+      1230: {
         slidesPerView: 'auto',
         slidesPerGroup: 1,
         centeredSlides: false,
@@ -43,6 +43,7 @@ function initWorkSwiper() {
       768: {
         slidesPerView: 'auto',
         spaceBetween: 14,
+        centeredSlides: true,
       },
       0: {
         slidesPerView: 1,
