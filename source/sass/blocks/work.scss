@@ -22,10 +22,19 @@
   height: 425px;
   border: 1px dashed $color-dark-gray;
   outline: none;
+
+  @include vp-1229 {
+    width: 391px;
+    height: 508px;
+  }
 }
 
 .swiper-slide:nth-child(2n) {
   height: 337px;
+
+  @include vp-1229 {
+    height: 440px;
+  }
 }
 
 .swiper-slide:nth-child(3n) {
