@@ -6,13 +6,6 @@
   padding-bottom: 53px;
 }
 
-.projects__text {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .projects__wrapper {
   display: flex;
   flex-direction: column;
@@ -22,6 +15,10 @@
 }
 
 .projects__text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   text-align: right;
   font-size: 128px;
   line-height: 100px;
@@ -66,4 +63,3 @@
   line-height: normal;
   text-transform: none;
 }
-
