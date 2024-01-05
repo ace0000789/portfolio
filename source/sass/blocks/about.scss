@@ -27,6 +27,10 @@
 .about__name-wrapper {
   position: absolute;
   left: -120px;
+
+  @include vp-1229 {
+    left: -68px;
+  }
 }
 
 .about__title {
@@ -35,6 +39,11 @@
   font-size: 128px;
   line-height: 128px;
   text-transform: uppercase;
+
+  @include vp-1229 {
+    font-size: 80px;
+    line-height: 80px;
+  }
 }
 
 .about__text-wrapper {
@@ -43,6 +52,11 @@
   gap: 35px;
   padding-top: 250px;
   margin-bottom: 50px;
+
+  @include vp-1229 {
+    padding-top: 180px;
+    margin-bottom: 30px;
+  }
 }
 
 .about__text {
@@ -50,6 +64,11 @@
   padding: 0;
   line-height: 114.9%;
   font-size: 20px;
+
+  @include vp-1229 {
+    line-height: 17px;
+    font-size: 17px;
+  }
 }
 
 .about__info-wrapper {
@@ -57,12 +76,21 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include vp-1229 {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .about__years-wrapper {
   display: flex;
   flex-direction: row;
   align-items: end;
+
+  @include vp-1229 {
+    gap: 25px;
+  }
 }
 
 .about__years-number {
@@ -70,11 +98,21 @@
   padding: 0;
   font-size: 148px;
   line-height: 108px;
+
+  @include vp-1229 {
+    font-size: 80px;
+    line-height: 60px;
+  }
 }
 
 .about__years-experience {
   margin: 0;
   padding: 0;
+
+  @include vp-1229 {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .about__links-wrapper {
@@ -83,9 +121,18 @@
   flex-wrap: wrap;
   gap: 36px;
   align-items: end;
+
+  @include vp-1229 {
+    gap: 20px;
+  }
 }
 
 .about__link {
   line-height: 23px;
   text-decoration: underline;
+
+  @include vp-1229 {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
