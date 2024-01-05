@@ -4,6 +4,16 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 53px;
+
+  @include vp-1229 {
+    padding-top: 50px;
+  }
+}
+
+.projects {
+  @include vp-1229 {
+    margin-bottom: 50px;
+  }
 }
 
 .projects__wrapper {
@@ -12,6 +22,11 @@
   flex-wrap: wrap;
   width: 920px;
   margin-left: auto;
+
+  @include vp-1229 {
+    margin: 0 auto;
+    max-width: 720px;
+  }
 }
 
 .projects__text {
@@ -29,6 +44,15 @@
   &--first {
     height: 120px;
     text-align: center;
+
+    @include vp-1229 {
+      height: 90px;
+    }
+  }
+
+  @include vp-1229 {
+    font-size: 90px;
+    line-height: 80px;
   }
 }
 

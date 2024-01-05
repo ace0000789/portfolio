@@ -1,6 +1,10 @@
 .work {
   width: calc(100vw - 85px);
   overflow: hidden;
+
+  @include vp-1229 {
+    width: 100%;
+  }
 }
 
 .swiper-container {
