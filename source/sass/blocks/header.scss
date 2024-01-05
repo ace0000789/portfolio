@@ -20,6 +20,12 @@
     justify-content: center;
     gap: 50px;
   }
+
+  @include vp-767 {
+    padding: 25px 10px 25px;
+    gap: 5px;
+    justify-content: space-between;
+  }
 }
 
 .header__item {
@@ -43,6 +49,11 @@
 
   @include vp-1229 {
     padding: 0 15px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 18px;
   }
 
   &--contacts {
