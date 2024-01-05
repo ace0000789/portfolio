@@ -130,9 +130,19 @@
 .about__link {
   line-height: 23px;
   text-decoration: underline;
+  transition: opacity 0.3s;
 
   @include vp-1229 {
     font-size: 18px;
     line-height: 18px;
   }
+
+  @include hover-focus {
+    opacity: 0.7;
+    outline: none;
+  }
+}
+
+.about__links-wrapper .about__link:active {
+  opacity: 1;
 }
