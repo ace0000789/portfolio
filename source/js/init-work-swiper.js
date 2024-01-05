@@ -29,7 +29,7 @@ function initWorkSwiper() {
     // Свободный режим (перетаскивание по 1 фрагменту)
     freeMod: true,
     // Скорость переклдючения слайда
-    speed: 600,
+    speed: 300,
     // Листание
     effect: 'slide',
     breakpoints: {
