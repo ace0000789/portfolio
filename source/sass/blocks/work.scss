@@ -16,15 +16,13 @@
 .swiper-slide {
   width: 340px;
   height: 425px;
-  background-color: $color-default-black;
+  border: 1px dashed $color-dark-gray;
   outline: none;
 }
 
 .swiper-slide:nth-child(2n) {
   height: 337px;
-  background-color: red;
 }
 
 .swiper-slide:nth-child(3n) {
-  background-color: greenyellow;
 }
