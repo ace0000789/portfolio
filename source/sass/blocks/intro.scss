@@ -39,6 +39,16 @@
     height: 120px;
     text-align: center;
     margin-left: 93px;
+
+    @include vp-1229 {
+      margin-left: 0;
+      text-align: right;
+      margin-right: 195px;
+    }
+  }
+
+  @include vp-1229 {
+    font-size: 90px;
   }
 }
 
@@ -48,6 +58,10 @@
   gap: 11px;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include vp-1229 {
+    justify-content: flex-end;
+  }
 }
 
 .intro__subwrapper {
