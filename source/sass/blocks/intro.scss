@@ -45,10 +45,21 @@
       text-align: right;
       margin-right: 195px;
     }
+
+    @include vp-767 {
+      margin-right: 0;
+      line-height: 48px;
+      height: auto;
+    }
   }
 
   @include vp-1229 {
     font-size: 90px;
+  }
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 48px;
   }
 }
 
@@ -84,4 +95,9 @@
   padding: 0;
   font-size: 20px;
   line-height: normal;
+
+  @include vp-767 {
+    font-size: 14px;
+    text-align: right;
+  }
 }
