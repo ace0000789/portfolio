@@ -2,10 +2,15 @@
   position: relative;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  user-select: none;
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+
+  @include vp-1229 {
+    flex-direction: column;
+  }
 
   .header,
   .footer {
