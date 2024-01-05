@@ -46,10 +46,10 @@ function initWorkSwiper() {
         centeredSlides: true,
       },
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.4,
         initialSlide: 0,
-        watchSlidesProgress: true,
-        spaceBetween: 35,
+        spaceBetween: 15,
+        centeredSlides: true,
       },
     },
   });
