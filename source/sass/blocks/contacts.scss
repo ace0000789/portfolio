@@ -1,5 +1,10 @@
 .contacts {
   padding-top: 80px;
+
+  @include vp-1229 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .contacts__title {
@@ -15,6 +20,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 40px;
+
+  @include vp-1229 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .contacts__photo {
