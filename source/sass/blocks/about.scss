@@ -58,6 +58,7 @@
   font-size: 128px;
   line-height: 128px;
   text-transform: uppercase;
+  font-weight: 600;
 
   @include vp-1229 {
     font-size: 80px;
@@ -146,6 +147,7 @@
   padding: 0;
   font-size: 148px;
   line-height: 108px;
+  font-weight: 600;
 
   @include vp-1229 {
     font-size: 80px;
