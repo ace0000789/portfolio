@@ -2,7 +2,7 @@ function addImageOverlay() {
   // Получаем ссылки на необходимые элементы
   const slides = document.querySelectorAll('.swiper-slide');
   const overlay = document.createElement('div');
-  overlay.classList.add('overlay');
+  overlay.classList.add('swiper-overlay');
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
   const image = document.createElement('img');
@@ -25,7 +25,7 @@ function addImageOverlay() {
     overlay.classList.remove('show');
   });
 
-  
+
   // Добавляем обработчик события нажатия на клавишу Escape
   document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {

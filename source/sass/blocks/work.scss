@@ -19,9 +19,10 @@
 }
 
 .swiper-slide {
-  width: 900px;
+  width: 800px;
   height: 500px;
   outline: none;
+  position: relative;
 
   @include vp-1229 {
     width: 1000px;
@@ -47,6 +48,27 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(../../img/sprite/view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.4s;
+    opacity: 0;
+  }
+}
+
+.swiper-slide:hover {
+  &::after {
+    opacity: 1;
   }
 }
 
@@ -92,8 +114,7 @@
   }
 }
 
-
-.overlay {
+.swiper-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -106,7 +127,7 @@
   z-index: 9999;
 }
 
-.overlay.show {
+.swiper-overlay.show {
   display: flex;
 }
 
@@ -119,5 +140,3 @@
   max-width: 100%;
   max-height: 100%;
 }
-
-/**/
