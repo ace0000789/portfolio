@@ -1,5 +1,6 @@
 function addImageOverlay() {
   // Получаем ссылки на необходимые элементы
+  const html = document.querySelector('html');
   const slides = document.querySelectorAll('.swiper-slide');
   const overlay = document.createElement('div');
   overlay.classList.add('swiper-overlay');
@@ -13,12 +14,14 @@ function addImageOverlay() {
 
   let currentIndex = 0; // Текущий индекс слайда
 
+
   // Функция для отображения изображения по индексу
   function showImageByIndex(index) {
     const slide = slides[index];
     const slideImage = slide.querySelector('img');
     image.src = slideImage.src;
     overlay.classList.add('show');
+    html.classList.add('scroll-lock');
   }
 
   // Добавляем обработчик клика на каждый слайд
@@ -32,12 +35,14 @@ function addImageOverlay() {
   // Добавляем обработчик клика на оверлей для закрытия
   overlay.addEventListener('click', function () {
     overlay.classList.remove('show');
+    html.classList.remove('scroll-lock');
   });
 
   // Добавляем обработчик события нажатия на клавишу Escape
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
       overlay.classList.remove('show');
+      html.classList.remove('scroll-lock');
     }
   });
 
