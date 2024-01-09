@@ -56,6 +56,35 @@ function addImageOverlay() {
       showImageByIndex(currentIndex);
     }
   });
+
+  // Добавляем обработчики событий touchstart, touchmove и touchend для перелистывания на тач-устройствах
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  imageContainer.addEventListener('touchstart', function(event) {
+    touchStartX = event.touches[0].clientX;
+  });
+
+  imageContainer.addEventListener('touchmove', function(event) {
+    touchEndX = event.touches[0].clientX;
+  });
+
+  imageContainer.addEventListener('touchend', function() {
+    const touchDiff = touchStartX - touchEndX;
+    const swipeThreshold = 50; // Пороговое значение для срабатывания перелистывания
+
+    if (touchDiff > swipeThreshold) {
+      // Свайп влево
+      currentIndex = (currentIndex + 1) % slides.length;
+      showImageByIndex(currentIndex);
+    } else if (touchDiff < -swipeThreshold) {
+      // Свайп вправо
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showImageByIndex(currentIndex);
+    }
+  });
+
+
 }
 
 // Используйте функцию для добавления функциональности к слайдеру
