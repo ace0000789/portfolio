@@ -11,9 +11,7 @@ function addImageOverlay() {
   imageContainer.appendChild(image);
   overlay.appendChild(imageContainer);
   document.body.appendChild(overlay);
-
-  let currentIndex = 0; // Текущий индекс слайда
-
+  let currentIndex = 0;
 
   // Функция для отображения изображения по индексу
   function showImageByIndex(index) {
@@ -47,7 +45,7 @@ function addImageOverlay() {
   });
 
   // Добавляем обработчик события нажатия на клавишу ArrowRight для переключения на следующее изображение
-  document.addEventListener('keydown', function(event) {
+  document.addEventListener('keydown', function (event) {
     if (event.key === 'ArrowRight') {
       if (overlay.classList.contains('show')) {
         currentIndex = (currentIndex + 1) % slides.length;
@@ -94,5 +92,4 @@ function addImageOverlay() {
   });
 }
 
-// Используйте функцию для добавления функциональности к слайдеру
 export {addImageOverlay};
