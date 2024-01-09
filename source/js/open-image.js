@@ -25,6 +25,7 @@ function addImageOverlay() {
     overlay.classList.remove('show');
   });
 
+  
   // Добавляем обработчик события нажатия на клавишу Escape
   document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
