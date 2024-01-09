@@ -54,7 +54,7 @@ function initWorkSwiper() {
         spaceBetween: 5,
       },
       0: {
-        slidesPerView: 1.4,
+        slidesPerView: 'auto',
         initialSlide: 0,
         spaceBetween: 5,
       },
