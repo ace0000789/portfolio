@@ -43,7 +43,7 @@ function initWorkSwiper() {
         slidesPerGroup: 1,
         centeredSlides: false,
         allowTouchMove: true,
-        spaceBetween: 1,
+        spaceBetween: 5,
       },
       1024: {
         slidesPerView: 'auto',
