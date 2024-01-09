@@ -58,7 +58,7 @@
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    background-image: url(../../img/sprite/view.svg);
+    background-image: url("../../img/sprite/view.svg");
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.4s;
@@ -104,7 +104,6 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-
   @include hover-focus {
     background-color: rgba(0, 0, 0, 0.6);
 
@@ -113,6 +112,8 @@
     }
   }
 }
+
+/* styles for mobal open */
 
 .swiper-overlay {
   position: fixed;
