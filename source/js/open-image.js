@@ -44,18 +44,23 @@ function addImageOverlay() {
   // Добавляем обработчик события нажатия на клавишу ArrowRight для переключения на следующее изображение
   document.addEventListener('keydown', function(event) {
     if (event.key === 'ArrowRight') {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showImageByIndex(currentIndex);
+      if(overlay.classList.contains('show')) {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showImageByIndex(currentIndex);
+      }
     }
   });
 
   // Добавляем обработчик события нажатия на клавишу ArrowLeft для переключения на предыдущее изображение
   document.addEventListener('keydown', function(event) {
     if (event.key === 'ArrowLeft') {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      showImageByIndex(currentIndex);
+      if(overlay.classList.contains('show')) {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showImageByIndex(currentIndex);
+      }
     }
   });
+
 
   // Добавляем обработчики событий touchstart, touchmove и touchend для перелистывания на тач-устройствах
   let touchStartX = 0;
