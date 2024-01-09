@@ -196,6 +196,7 @@
   line-height: 23px;
   text-decoration: underline;
   transition: opacity 0.3s;
+  outline: none;
 
   @include vp-1229 {
     font-size: 18px;
@@ -215,4 +216,5 @@
 
 .about__links-wrapper .about__link:active {
   opacity: 1;
+  outline: none;
 }
