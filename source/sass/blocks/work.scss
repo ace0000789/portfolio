@@ -19,7 +19,7 @@
 }
 
 .swiper-slide {
-  width: 800px;
+  width: max-content;
   height: 500px;
   outline: none;
   position: relative;
@@ -45,8 +45,8 @@
   }
 
   img {
-    height: 100%;
-    width: 100%;
+    width: auto;
+    height: 500px;
     object-fit: cover;
   }
 
