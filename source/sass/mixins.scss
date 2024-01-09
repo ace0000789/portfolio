@@ -24,6 +24,12 @@
   }
 }
 
+@mixin active {
+  &.focus-visible:active {
+    @content;
+  }
+}
+
 // Desktop first
 
 @mixin vp-1229 {

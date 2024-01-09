@@ -18,6 +18,8 @@
   align-items: center;
 }
 
+/* slide */
+
 .swiper-slide {
   width: max-content;
   height: 500px;
@@ -81,6 +83,8 @@
   }
 }
 
+/* arrows */
+
 .swiper-button-prev {
   position: absolute;
   top: 50%;
@@ -114,6 +118,17 @@
 .swiper-button-prev,
 .swiper-button-next {
   @include hover-focus {
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &::after {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+.swiper-container .swiper-button-prev:active,
+.swiper-container .swiper-button-next:active {
+  @include vp-1229 {
     background-color: rgba(0, 0, 0, 0.6);
 
     &::after {
