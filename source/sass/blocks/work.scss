@@ -25,13 +25,12 @@
   position: relative;
 
   @include vp-1229 {
-    width: 1000px;
     height: 800px;
   }
 
   @include vp-1023 {
     width: 800px;
-    height: 700px;
+    height: 650px;
   }
 
   @include vp-819 {
@@ -48,6 +47,16 @@
     width: auto;
     height: 500px;
     object-fit: cover;
+
+    @include vp-1229 {
+      max-width: 800px;
+      height: 800px;
+    }
+
+    @include vp-1023 {
+      width: 800px;
+      height: 650px;
+    }
   }
 
   &::after {
