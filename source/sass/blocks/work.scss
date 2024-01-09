@@ -9,6 +9,7 @@
 
 .swiper-container {
   overflow: hidden;
+  position: relative;
 }
 
 .swiper-wrapper {
@@ -18,13 +19,23 @@
 }
 
 .swiper-slide {
-  width: 340px;
-  height: 425px;
+  width: 900px;
+  height: 500px;
   outline: none;
 
   @include vp-1229 {
-    width: 391px;
-    height: 508px;
+    width: 1000px;
+    height: 800px;
+  }
+
+  @include vp-1023 {
+    width: 800px;
+    height: 700px;
+  }
+
+  @include vp-819 {
+    width: 700px;
+    height: 500px;
   }
 
   @include vp-767 {
@@ -39,23 +50,49 @@
   }
 }
 
-.swiper-slide:nth-child(2n) {
-  height: 370px;
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 40px;
+  height: 80px;
+  left: 0;
+  outline: none;
 
-  @include vp-1229 {
-    width: 391px;
-    height: 508px;
+  &::after {
+    color: rgba(255, 255, 255, 0.65);
   }
+}
 
-  @include vp-767 {
-    width: 340px;
-    height: 425px;
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 40px;
+  height: 80px;
+  right: 0;
+  outline: none;
+
+  &::after {
+    color: rgba(255, 255, 255, 0.65);
   }
 }
 
-.swiper-slide-active {
-  @include vp-1229 {
-    
+.swiper-button-prev,
+.swiper-button-next {
+
+  @include hover-focus {
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &::after {
+      color: rgba(255, 255, 255, 1);
+    }
   }
 }
+
+
+
+
 /**/

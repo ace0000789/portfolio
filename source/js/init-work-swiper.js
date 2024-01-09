@@ -3,6 +3,11 @@ import Swiper from './vendor/swiper';
 function initWorkSwiper() {
   const myImageSlider = new Swiper('[data-validate="swiper-work"]', {
 
+    navigation: {
+      nextEl: '[data-validate="button-next"]',
+      prevEl: '[data-validate="button-prev"]',
+    },
+
     // перетаскивание на ПК
     simulateTouch: true,
     // чувствительность свайпа
@@ -38,18 +43,20 @@ function initWorkSwiper() {
         slidesPerGroup: 1,
         centeredSlides: false,
         allowTouchMove: true,
-        spaceBetween: 14,
+        spaceBetween: 1,
+      },
+      1024: {
+        slidesPerView: 'auto',
+        spaceBetween: 5,
       },
       768: {
         slidesPerView: 'auto',
-        spaceBetween: 14,
-        centeredSlides: true,
+        spaceBetween: 5,
       },
       0: {
         slidesPerView: 1.4,
         initialSlide: 0,
-        spaceBetween: 15,
-        centeredSlides: true,
+        spaceBetween: 5,
       },
     },
   });
